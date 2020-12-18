@@ -4,18 +4,38 @@
 <head>
     <title>CSS3 Selector Basic Page</title>
     <style>
-        body, p, h1, h2 {
-            margin: 0;
-            padding: 0;
+        #header {
+            width: 800px; margin: 0 auto;
+            background: red;
+        }
+
+        #wrap {
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+        }
+
+        #aside {
+            width: 200px; float: left;
+            background: blue;
+        }
+
+        #content {
+            width: 600px; float: left;
+            background: green;
         }
     </style>
 </head>
-
 <body>
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem facilis quidem, dicta nihil sed exercitationem,
-        doloremque, dolorum pariatur maiores cum cupiditate neque aliquid modi architecto ullam maxime libero excepturi
-        ratione!</p>
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+        </div>
+        <div id="content">
+            <h1>Content</h1>
+        </div>
+    </div>
 </body>
-
 </html>
