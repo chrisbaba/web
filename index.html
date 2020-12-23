@@ -2,17 +2,25 @@
 <html>
 
 <head>
-    <title>CSS3 Selector Basic - 클래스 선택자</title>
+    <title>CSS3 Selector Basic - 동위 선택자</title>
     <style>
-        .select { color: red; }
+        h1 + h2 {
+            color: red;
+        }
+
+        h1 ~ h2 {
+            background-color: orange;
+        }
     </style>
 </head>
+
 <body>
-    <ul>
-        <li class="select">Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-        <li class="select">Lorem ipsum</li>
-        <li>Lorem ipsum</li>
-    </ul>
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
 </body>
+
 </html>
