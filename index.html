@@ -4,21 +4,25 @@
 <head>
     <title>CSS3 Selector Basic Page</title>
     <style>
-        p::selection {
-            background: black;
-            color: white;
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:link::after {
+            content: ' - ' attr(href);
         }
     </style>
 </head>
 
 <body>
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus quaerat explicabo rem laudantium corrupti
-        maxime omnis eum ut. Eveniet officia soluta corporis, numquam similique doloribus molestiae deleniti dolores
-        esse aperiam.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio, quod, cupiditate omnis, nemo totam
-        debitis quidem pariatur eum culpa doloribus quibusdam assumenda neque nihil tenetur earum eaque recusandae
-        cumque!</p>
+    <h1><a href="#">Nothing</a></h1>
+    <h1><a href="http://hanb.co.kr">Hanbit Media</a></h1>
+    <h1><a href="http://www.w3.org">W3C</a></h1>
+    <h1><a href="https://github.com">Github</a></h1>
 </body>
 
 </html>
